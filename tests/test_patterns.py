@@ -2,6 +2,7 @@ import pandas as pd
 
 from munich_traffic_jam_tracker.patterns import derive_patterns
 from munich_traffic_jam_tracker.traffic import match_flow_to_patterns, parse_flow_results
+from munich_traffic_jam_tracker.traffic import append_traffic_snapshot, summarize_traffic_history
 
 
 def test_derives_stable_pattern_and_terminal_direction_without_gtfs_direction():
@@ -49,4 +50,30 @@ def test_parses_and_matches_here_flow_to_a_pattern():
     assert len(flow) == 1
     assert len(matches) == 1
     assert matches.iloc[0]["delay_seconds"] > 0
+
+
+def test_appends_hourly_snapshot_and_calculates_all_time_mean(tmp_path):
+    snapshot = pd.DataFrame(
+        {
+            "pattern_id": ["pattern-1"],
+            "route_short_name": ["58"],
+            "direction_label": ["Start -> Ende"],
+            "traffic_delay_seconds": [30.0],
+            "traffic_jam_factor": [3.0],
+            "matched_flow_segments": [2],
+        }
+    )
+    history_path = tmp_path / "traffic_history.parquet"
+
+    append_traffic_snapshot(history_path, snapshot, pd.Timestamp("2026-01-01T10:00:00Z"))
+    history = append_traffic_snapshot(
+        history_path,
+        snapshot.assign(traffic_delay_seconds=50.0),
+        pd.Timestamp("2026-01-01T11:00:00Z"),
+    )
+    pattern_mean, line_mean = summarize_traffic_history(history)
+
+    assert len(history) == 2
+    assert pattern_mean.iloc[0]["traffic_delay_seconds"] == 40.0
+    assert line_mean.iloc[0]["observation_count"] == 2
 

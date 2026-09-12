@@ -16,7 +16,14 @@ from .patterns import (
 )
 from .plotting import plot_corridor_map, plot_top_patterns
 from .plotting import plot_traffic_delay_by_line, plot_traffic_delay_map
-from .traffic import fetch_flow, match_flow_to_patterns, parse_flow_results, summarize_traffic
+from .traffic import (
+    append_traffic_snapshot,
+    fetch_flow,
+    match_flow_to_patterns,
+    parse_flow_results,
+    summarize_traffic,
+    summarize_traffic_history,
+)
 
 
 def derive_command(arguments: argparse.Namespace) -> None:
@@ -47,12 +54,18 @@ def derive_command(arguments: argparse.Namespace) -> None:
         results = fetch_flow(api_key, west, south, east, north)
         flow = parse_flow_results(results)
         matches = match_flow_to_patterns(flow, pattern_stops)
-        traffic_by_pattern, traffic_by_line = summarize_traffic(matches, patterns)
-        traffic_by_pattern.to_csv(output_dir / "bus_pattern_traffic.csv", index=False)
-        traffic_by_line.to_csv(output_dir / "bus_line_traffic.csv", index=False)
-        plot_traffic_delay_by_line(traffic_by_line, plots_dir / "bus_line_traffic_delay.png")
-        plot_traffic_delay_map(traffic_by_pattern, pattern_stops, plots_dir / "bus_traffic_delay_map.png")
-        print(f"Matched {len(matches)} HERE flow segments and wrote traffic estimates")
+        current_by_pattern, _ = summarize_traffic(matches, patterns)
+        history_path = output_dir / "traffic_history.parquet"
+        if current_by_pattern.empty:
+            print("HERE returned no flow segments matching the bus corridors; history unchanged")
+        else:
+            history = append_traffic_snapshot(history_path, current_by_pattern)
+            traffic_by_pattern, traffic_by_line = summarize_traffic_history(history)
+            traffic_by_pattern.to_csv(output_dir / "bus_pattern_traffic.csv", index=False)
+            traffic_by_line.to_csv(output_dir / "bus_line_traffic.csv", index=False)
+            plot_traffic_delay_by_line(traffic_by_line, plots_dir / "bus_line_traffic_delay.png")
+            plot_traffic_delay_map(traffic_by_pattern, pattern_stops, plots_dir / "bus_traffic_delay_map.png")
+            print(f"Matched {len(matches)} HERE flow segments and wrote traffic estimates")
     print(f"Wrote {len(patterns)} patterns and {len(pattern_stops)} pattern stops to {output_dir}")
 
 

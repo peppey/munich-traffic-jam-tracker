@@ -28,10 +28,20 @@ Results are written to `data/derived/`:
 - `bus_corridors.geojson`: line candidates joining consecutive stops
 - `bus_pattern_traffic.csv`: HERE-Verkehrsschätzung je GTFS-Muster
 - `bus_line_traffic.csv`: HERE-Verkehrsschätzung je Buslinie und Richtung
+- `traffic_history.parquet`: alle stündlichen HERE-Snapshots mit UTC-Zeitstempel
 - `plots/top_bus_patterns.png`: most frequent patterns by line
 - `plots/bus_corridor_map.png`: a map of the most common corridor candidates
 - `plots/bus_line_traffic_delay.png`: Linien-Ranking nach geschätzter Verzögerung
 - `plots/bus_traffic_delay_map.png`: Korridore eingefärbt nach geschätzter Verzögerung
+
+## GitHub Actions
+
+Der Workflow `.github/workflows/update-traffic.yml` ruft die HERE API stündlich
+auf. Dafür muss im Repository unter **Settings > Secrets and variables >
+Actions** ein Repository-Secret namens `HERE_API_KEY` angelegt werden. Jeder
+Lauf hängt einen Snapshot an `traffic_history.parquet` an und committed die
+aktualisierten CSVs und Plots. Die veröffentlichten Traffic-Werte und Plots
+sind Mittelwerte über alle gespeicherten Snapshots.
 
 Die HERE-Werte beschreiben den aktuellen Straßenverkehr und sind deshalb eine
 verkehrsbedingte Verzögerungsschätzung für Buskorridore, keine tatsächliche

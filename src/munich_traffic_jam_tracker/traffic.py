@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import math
+from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any
 
 import pandas as pd
@@ -182,3 +184,57 @@ def summarize_traffic(matches: pd.DataFrame, patterns: pd.DataFrame) -> tuple[pd
         matched_flow_segments=("matched_flow_segments", "sum"),
     )
     return pattern_summary, route_summary
+
+
+def append_traffic_snapshot(
+    history_path: Path,
+    traffic_by_pattern: pd.DataFrame,
+    observed_at: datetime | None = None,
+) -> pd.DataFrame:
+    """Append one hourly pattern snapshot and return the complete history."""
+    timestamp = observed_at or datetime.now(timezone.utc)
+    timestamp_value = pd.Timestamp(timestamp)
+    timestamp_value = (
+        timestamp_value.tz_localize("UTC")
+        if timestamp_value.tzinfo is None
+        else timestamp_value.tz_convert("UTC")
+    )
+    snapshot = traffic_by_pattern.copy()
+    snapshot.insert(0, "observed_at", timestamp_value)
+    if history_path.exists():
+        history = pd.read_parquet(history_path)
+        history = pd.concat([history, snapshot], ignore_index=True)
+    else:
+        history = snapshot
+    history["observed_at"] = pd.to_datetime(history["observed_at"], utc=True)
+    history = history.drop_duplicates(subset=["observed_at", "pattern_id"], keep="last")
+    history = history.sort_values(["observed_at", "route_short_name", "direction_label"])
+    history_path.parent.mkdir(parents=True, exist_ok=True)
+    history.to_parquet(history_path, index=False)
+    return history
+
+
+def summarize_traffic_history(history: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Calculate all-time mean traffic estimates by pattern and direction."""
+    if history.empty:
+        return history.copy(), pd.DataFrame()
+    pattern_columns = ["pattern_id", "route_short_name", "direction_label"]
+    pattern_summary = history.groupby(pattern_columns, as_index=False).agg(
+        traffic_delay_seconds=("traffic_delay_seconds", "mean"),
+        traffic_jam_factor=("traffic_jam_factor", "mean"),
+        matched_flow_segments=("matched_flow_segments", "mean"),
+        observation_count=("observed_at", "nunique"),
+        first_observed_at=("observed_at", "min"),
+        last_observed_at=("observed_at", "max"),
+    )
+    line_summary = pattern_summary.groupby(
+        ["route_short_name", "direction_label"], as_index=False
+    ).agg(
+        traffic_delay_seconds=("traffic_delay_seconds", "mean"),
+        traffic_jam_factor=("traffic_jam_factor", "mean"),
+        matched_flow_segments=("matched_flow_segments", "mean"),
+        observation_count=("observation_count", "max"),
+        first_observed_at=("first_observed_at", "min"),
+        last_observed_at=("last_observed_at", "max"),
+    )
+    return pattern_summary, line_summary

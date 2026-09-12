@@ -1,0 +1,51 @@
+name: Update Munich traffic data
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-traffic-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: latest
+          enable-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: pyproject.toml
+
+      - name: Install project
+        run: uv sync --locked
+
+      - name: Collect traffic snapshot
+        env:
+          HERE_API_KEY: ${{ secrets.HERE_API_KEY }}
+        run: uv run munich-traffic-jam-tracker derive-patterns
+
+      - name: Commit updated history and plots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/derived/traffic_history.parquet data/derived/bus_pattern_traffic.csv data/derived/bus_line_traffic.csv data/derived/plots/
+          if git diff --cached --quiet; then
+            echo "No traffic data changes to commit."
+          else
+            git commit -m "Update traffic data"
+            git push
+          fi
