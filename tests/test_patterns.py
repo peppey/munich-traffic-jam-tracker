@@ -37,6 +37,7 @@ def test_parses_and_matches_here_flow_to_a_pattern():
         {
             "pattern_id": ["pattern-1", "pattern-1"],
             "route_short_name": ["58", "58"],
+            "direction_label": ["Start -> Ende", "Start -> Ende"],
             "stop_sequence": [0, 1],
             "stop_lat": [48.1, 48.2],
             "stop_lon": [11.5, 11.6],
@@ -48,3 +49,4 @@ def test_parses_and_matches_here_flow_to_a_pattern():
     assert len(flow) == 1
     assert len(matches) == 1
     assert matches.iloc[0]["delay_seconds"] > 0
+

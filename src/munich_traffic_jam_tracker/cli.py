@@ -20,17 +20,17 @@ from .traffic import fetch_flow, match_flow_to_patterns, parse_flow_results, sum
 
 
 def derive_command(arguments: argparse.Namespace) -> None:
-    gtfs_dir = Path(arguments.gtfs_dir)
+    static_dir = Path("data/static")
     output_dir = Path(arguments.output_dir)
     plots_dir = output_dir / "plots"
     output_dir.mkdir(parents=True, exist_ok=True)
     plots_dir.mkdir(exist_ok=True)
 
-    routes = load_munich_bus_routes(gtfs_dir / "routes.txt", Path(arguments.munich_lines))
-    stops = load_munich_stops(Path(arguments.munich_stops))
-    trips = load_bus_trips(gtfs_dir / "trips.txt", set(routes["route_id"]))
+    routes = load_munich_bus_routes(static_dir / "routes.csv", static_dir / "munich_lines.csv")
+    stops = load_munich_stops(static_dir / "munich_stops.csv")
+    trips = load_bus_trips(static_dir / "trips.csv", set(routes["route_id"]))
     stop_times = load_munich_bus_stop_times(
-        gtfs_dir / "stop_times.txt", set(trips["trip_id"]), set(stops["stop_id"])
+        static_dir / "stop_times.csv", set(trips["trip_id"]), set(stops["stop_id"])
     )
     patterns, pattern_stops = derive_patterns(routes, trips, stop_times, stops)
     patterns.drop(columns="stop_ids").to_csv(output_dir / "bus_patterns.csv", index=False)
@@ -60,10 +60,6 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Derive Munich bus traffic corridors from GTFS.")
     subparsers = parser.add_subparsers(dest="command", required=True)
     derive = subparsers.add_parser("derive-patterns")
-    derive.add_argument("--gtfs-dir", required=True)
-    derive.add_argument("--munich-stops", required=True)
-    derive.add_argument("--munich-lines", required=True)
-    derive.add_argument("--munich-boundary", required=True, help="Recorded input boundary for reproducibility.")
     derive.add_argument("--output-dir", default="data/derived")
     derive.add_argument("--here-api-key", help="HERE API key; defaults to HERE_API_KEY")
     derive.set_defaults(handler=derive_command)

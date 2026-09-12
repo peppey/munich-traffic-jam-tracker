@@ -39,8 +39,9 @@ def plot_corridor_map(patterns: pd.DataFrame, pattern_stops: pd.DataFrame, outpu
 def plot_traffic_delay_by_line(traffic_by_line: pd.DataFrame, output_path: Path) -> None:
     """Plot estimated road-traffic delay by bus line."""
     top = traffic_by_line.nlargest(25, "traffic_delay_seconds").sort_values("traffic_delay_seconds")
+    labels = top["route_short_name"].astype(str) + " | " + top["direction_label"]
     figure, axis = plt.subplots(figsize=(10, 9), layout="constrained")
-    axis.barh(top["route_short_name"].astype(str), top["traffic_delay_seconds"], color="#d95f02")
+    axis.barh(labels, top["traffic_delay_seconds"], color="#d95f02")
     axis.set(
         title="Geschaetzte verkehrsbedingte Verzoegerung je Buslinie",
         xlabel="Sekunden pro gematchtem HERE-Strassensegment",

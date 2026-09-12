@@ -121,6 +121,7 @@ def match_flow_to_patterns(
                 {
                     "pattern_id": pattern_id,
                     "route_short_name": start.route_short_name,
+                    "direction_label": start.direction_label,
                     "start": (float(start.stop_lat), float(start.stop_lon)),
                     "end": (float(end.stop_lat), float(end.stop_lon)),
                 }
@@ -141,6 +142,7 @@ def match_flow_to_patterns(
                 {
                     "pattern_id": nearest["pattern_id"],
                     "route_short_name": nearest["route_short_name"],
+                    "direction_label": nearest["direction_label"],
                     "distance_km": distance,
                     "length_km": flow_row.length_km,
                     "speed_kph": flow_row.speed_kph,
@@ -153,10 +155,10 @@ def match_flow_to_patterns(
 
 
 def summarize_traffic(matches: pd.DataFrame, patterns: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Aggregate matched flow into pattern and route-level delay estimates."""
+    """Aggregate matched flow into pattern and line-direction delay estimates."""
     if matches.empty:
         empty = pd.DataFrame(columns=["pattern_id", "traffic_delay_seconds", "traffic_jam_factor", "matched_flow_segments"])
-        return empty, pd.DataFrame(columns=["route_short_name", "traffic_delay_seconds", "traffic_jam_factor", "matched_flow_segments"])
+        return empty, pd.DataFrame(columns=["route_short_name", "direction_label", "traffic_delay_seconds", "traffic_jam_factor", "matched_flow_segments"])
     weighted = matches.assign(weight=matches["length_km"].clip(lower=0.001))
     rows: list[dict[str, Any]] = []
     for (pattern_id, route_short_name), group in weighted.groupby(["pattern_id", "route_short_name"]):
@@ -174,7 +176,7 @@ def summarize_traffic(matches: pd.DataFrame, patterns: pd.DataFrame) -> tuple[pd
     pattern_summary = patterns[["pattern_id", "route_short_name", "direction_label"]].merge(
         pattern_summary, on=["pattern_id", "route_short_name"], how="right"
     )
-    route_summary = pattern_summary.groupby("route_short_name", as_index=False).agg(
+    route_summary = pattern_summary.groupby(["route_short_name", "direction_label"], as_index=False).agg(
         traffic_delay_seconds=("traffic_delay_seconds", "mean"),
         traffic_jam_factor=("traffic_jam_factor", "mean"),
         matched_flow_segments=("matched_flow_segments", "sum"),

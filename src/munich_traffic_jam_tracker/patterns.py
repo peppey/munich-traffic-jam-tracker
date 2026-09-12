@@ -111,9 +111,9 @@ def derive_patterns(
     patterns.insert(1, "route_short_name", patterns["route_id"].map(route_names))
     patterns["stop_count"] = patterns["stop_ids"].str.len()
 
-    pattern_stops = patterns[["pattern_id", "route_id", "route_short_name", "stop_ids"]].explode(
-        "stop_ids", ignore_index=True
-    )
+    pattern_stops = patterns[
+        ["pattern_id", "route_id", "route_short_name", "direction_label", "stop_ids"]
+    ].explode("stop_ids", ignore_index=True)
     pattern_stops = pattern_stops.rename(columns={"stop_ids": "stop_id"})
     pattern_stops["stop_sequence"] = pattern_stops.groupby("pattern_id").cumcount()
     pattern_stops = pattern_stops.merge(stops, on="stop_id", how="left")
