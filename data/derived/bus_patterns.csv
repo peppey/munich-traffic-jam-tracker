@@ -1,0 +1,314 @@
+pattern_id,route_short_name,route_id,direction_label,direction_source,trip_count,stop_count
+d6cd5c56f1341fdf,62,12650,Ostbahnhof -> Rotkreuzplatz,derived_terminal_stops,538,34
+e5d4eb50b8a2ac60,62,12650,Rotkreuzplatz -> Ostbahnhof,derived_terminal_stops,525,37
+b087ee92c8a76f5c,168,1804,Wastl-Witt-Straße -> Nymphenburg Süd,derived_terminal_stops,498,13
+8af0839efd4c181d,63,15116,Rotkreuzplatz -> Forstenrieder Allee,derived_terminal_stops,331,34
+5b130ddcbea03f47,168,1804,Nymphenburg Süd -> Wastl-Witt-Straße,derived_terminal_stops,306,12
+b3577c7fb5659b68,56,17799,Schloss Blutenburg -> Fürstenried West,derived_terminal_stops,304,27
+aeb31e3260b922f8,56,17799,Fürstenried West -> Schloss Blutenburg,derived_terminal_stops,303,29
+90aef3badfddd731,63,15116,Forstenrieder Allee -> Rotkreuzplatz,derived_terminal_stops,302,33
+fd8edb3f7f28da60,168,1804,Nymphenburg Süd -> Wastl-Witt-Straße,derived_terminal_stops,300,13
+706e68366b570d7d,52,20042,Sendlinger Tor -> Tierpark (Alemannenstr.),derived_terminal_stops,300,18
+1fe1348e52508293,53,10061,Aidenbachstraße -> Münchner Freiheit,derived_terminal_stops,296,35
+64ef1413d73149aa,52,20042,Tierpark (Alemannenstr.) -> Sendlinger Tor,derived_terminal_stops,296,16
+5e9bcdd0f061adb9,59,18037,Ackermannbogen -> Giesing,derived_terminal_stops,295,28
+29ce08e0be0b82f0,59,18037,Giesing -> Ackermannbogen,derived_terminal_stops,293,28
+adb4fc528d498c92,53,10061,Münchner Freiheit -> Aidenbachstraße,derived_terminal_stops,291,35
+bd8d1a9d2a8e49a7,63,15116,Forstenrieder Allee -> Rotkreuzplatz,derived_terminal_stops,291,34
+04a144c706687f31,58,13205,Hauptbahnhof Nord -> Hauptbahnhof Nord,derived_terminal_stops,287,39
+9578484b7e386e06,58,13205,Hauptbahnhof Nord -> Hauptbahnhof Nord,derived_terminal_stops,287,40
+2a0cfd772ffda289,50,17033,Johanneskirchen -> Dessauerstraße,derived_terminal_stops,287,27
+38734e1c44d0b7ba,193,14295,Trudering -> Von-Erckert-Straße,derived_terminal_stops,281,11
+19737af9a38e7e65,193,14295,Von-Erckert-Straße -> Trudering,derived_terminal_stops,278,11
+1f9a39ab31940d4c,50,17033,Dessauerstraße -> Johanneskirchen,derived_terminal_stops,278,26
+29c9c7840da0c0c2,197,16264,Neuperlach Zentrum -> Neuperlach Zentrum,derived_terminal_stops,257,17
+8fc27b1d36c83106,68,20374,Hauptbahnhof Nord -> Hauptbahnhof Nord,derived_terminal_stops,253,40
+e8be85a46a943f8b,68,20374,Hauptbahnhof Nord -> Hauptbahnhof Nord,derived_terminal_stops,253,42
+5387acc00e9e2646,154,16818,Nordbad -> Westerlandanger,derived_terminal_stops,219,34
+c5eb7bd1dc05bf2e,154,16818,Westerlandanger -> Nordbad,derived_terminal_stops,218,35
+01f218f9a2e33b2a,173,21811,Petuelring -> Feldmoching,derived_terminal_stops,213,14
+4b66ebabc6b72082,155,12381,Max-Weber-Platz -> Emdenstraße,derived_terminal_stops,206,15
+87a785f1fb8d62bf,155,12381,Emdenstraße -> Max-Weber-Platz,derived_terminal_stops,206,13
+d7bb6104b587ba4c,177,18142,Petuelring -> Studentenstadt,derived_terminal_stops,204,12
+555777cfdcc7c17c,161,17353,Berduxstraße -> Pasing Bf. Nord,derived_terminal_stops,200,5
+505ec41280e15bd3,161,17353,Pasing Bf. Nord -> Berduxstraße,derived_terminal_stops,199,5
+82c53ece06c418b1,166,14800,Forst-Kasten-Allee -> Kemptener Straße,derived_terminal_stops,193,8
+5231c7e9cbb1ab4d,140,15866,Scheidplatz -> Kieferngarten,derived_terminal_stops,183,21
+a3c1af24f95f61bc,140,15866,Kieferngarten -> Scheidplatz,derived_terminal_stops,182,21
+04db97ae4eea5b5f,190,14255,Ostbahnhof Friedenstraße -> Messestadt Ost,derived_terminal_stops,180,30
+b2c4eb622808376b,190,14255,Ostbahnhof Friedenstraße -> Messestadt Ost,derived_terminal_stops,180,30
+aa8c0f165b52757d,190,14255,Messestadt Ost -> Ostbahnhof Friedenstraße,derived_terminal_stops,178,31
+7ad1fe1451bd6b45,197,16264,Neuperlach Zentrum -> Neuperlach Zentrum,derived_terminal_stops,177,16
+26bfb21763afec0f,169,12167,Moosach -> Moosach,derived_terminal_stops,171,7
+a4128c422b164d35,132,18971,Forstenrieder Park -> Marienplatz,derived_terminal_stops,168,35
+f6425eca25945f21,181,11630,Studentenstadt -> Wallnerstraße,derived_terminal_stops,167,12
+0ec8db5997712ff7,188,11761,Daglfing Bahnhof West -> St. Emmeram,derived_terminal_stops,167,20
+29b04cb2d7cdf57f,188,11761,St. Emmeram -> Daglfing Bahnhof West,derived_terminal_stops,166,20
+1e924672e40949ae,139,13891,Messestadt West -> Klinikum Harlaching,derived_terminal_stops,166,42
+d3c1a2cce0836dd4,130,14039,Pasing -> Am Harras,derived_terminal_stops,165,21
+1880a89eb5f18049,139,13891,Klinikum Harlaching -> Messestadt West,derived_terminal_stops,163,42
+deadc71737de7fde,130,14039,Am Harras -> Pasing,derived_terminal_stops,161,20
+cd31572b0b015247,181,11630,Wallnerstraße -> Studentenstadt,derived_terminal_stops,160,12
+053dabd90bcbd7df,166,14800,Kemptener Straße -> Forst-Kasten-Allee,derived_terminal_stops,158,10
+bbf40f7b59686572,132,18971,Marienplatz -> Forstenrieder Park,derived_terminal_stops,158,34
+32718d4d6390b05f,198,16226,Neuperlach Zentrum -> Klara-Ziegler-Bogen,derived_terminal_stops,153,8
+b114087b97362619,164,20536,Augustenfelder Straße -> Westfriedhof,derived_terminal_stops,151,30
+db4a3532c3895508,164,20536,Westfriedhof -> Augustenfelder Straße,derived_terminal_stops,145,29
+708484be9655d9c7,135,11824,Thalkirchen (Tierpark) -> Waldfriedhof Solln,derived_terminal_stops,140,13
+884ce645a5b66f68,160,21848,Maria-Eich-Straße -> Allach,derived_terminal_stops,140,23
+6fbe5b04294c674f,135,11824,Waldfriedhof Solln -> Thalkirchen (Tierpark),derived_terminal_stops,139,12
+f7c79d3cfe2f9f6b,173,21811,Feldmoching -> Petuelring,derived_terminal_stops,139,14
+0af5c920bbee794b,198,16226,Klara-Ziegler-Bogen -> Neuperlach Zentrum,derived_terminal_stops,135,8
+c7cf4e9fbaf5919e,160,21848,Maria-Eich-Straße -> Otto-Warburg-Straße,derived_terminal_stops,133,29
+cc187783b3bed147,184,12347,Arabellapark -> Bruno-Walter-Ring,derived_terminal_stops,126,9
+ce24b2b82c5a7b0b,183,19005,Messestadt West -> Arabellapark,derived_terminal_stops,125,25
+16c6b4a35ff6342d,183,19005,Arabellapark -> Messestadt West,derived_terminal_stops,122,23
+c2e01cd1f6ed415c,183,19005,Arabellapark -> Messestadt West,derived_terminal_stops,122,24
+895c451232d27531,135,11824,Thalkirchen (Tierpark) -> Campingplatz Thalkirchen,derived_terminal_stops,121,5
+54d7ea6f7b01eb2f,135,11824,Campingplatz Thalkirchen -> Thalkirchen (Tierpark),derived_terminal_stops,116,4
+bf4fe716c1aae256,197,16264,Neuperlach Zentrum -> Neuperlach Zentrum,derived_terminal_stops,108,16
+7321d462f10642db,63,15116,Heimeranplatz -> Aidenbachstraße,derived_terminal_stops,106,11
+5f2e6dc5940201e6,63,15116,Aidenbachstraße -> Heimeranplatz,derived_terminal_stops,104,10
+4fbace311747dc37,160,21848,Allach -> Maria-Eich-Straße,derived_terminal_stops,103,23
+673681383112422d,175,16792,Georg-Brauchle-Ring -> Ludwigsfeld (Campingplatz),derived_terminal_stops,98,16
+7276df32df3b93ab,175,16792,Ludwigsfeld (Campingplatz) -> Georg-Brauchle-Ring,derived_terminal_stops,97,16
+e3dac4af250580a9,160,21848,Allach -> Maria-Eich-Straße,derived_terminal_stops,97,23
+48607ab25931f317,169,12167,Moosach -> Moosach,derived_terminal_stops,96,7
+6314d5f5913d7f58,160,21848,Pasing -> Dachstraße,derived_terminal_stops,82,6
+073e866c62126f13,160,21848,Dachstraße -> Pasing,derived_terminal_stops,81,6
+82332455685dcdae,187,14082,Michaelibad -> Arabellapark,derived_terminal_stops,79,32
+ee2ab65b13a696a9,187,14082,Arabellapark -> Michaelibad,derived_terminal_stops,79,30
+3f460c10e9119e23,150,13515,Bremer Straße -> Arabellapark,derived_terminal_stops,78,14
+bc9a71239679b7be,143,18650,"Olympia-Einkaufszentrum -> Freiham, Möbel Höffner",derived_terminal_stops,78,34
+b59dba94b2af8898,184,12347,Bruno-Walter-Ring -> Arabellapark,derived_terminal_stops,77,8
+158e3662a8814918,175,16792,Olympia-Einkaufszentrum -> Ludwigsfeld (Campingplatz),derived_terminal_stops,77,10
+d054b0e84e69f9d7,177,18142,Studentenstadt -> Petuelring,derived_terminal_stops,76,12
+77d9f3a8478dce4f,143,18650,"Freiham, Möbel Höffner -> Olympia-Einkaufszentrum",derived_terminal_stops,72,34
+eee9b02856a9adb2,143,18650,Olympia-Einkaufszentrum -> Hörweg,derived_terminal_stops,72,28
+2bb491b005dcfa09,160,21848,Blutenburg -> Waldfriedhof,derived_terminal_stops,72,23
+499c629654aa8acf,160,21848,Waldfriedhof -> Blutenburg,derived_terminal_stops,72,22
+70a00d760a094905,175,16792,Ludwigsfeld (Campingplatz) -> Olympia-Einkaufszentrum,derived_terminal_stops,71,14
+4e13985e280a4a34,177,18142,Studentenstadt -> Petuelring,derived_terminal_stops,69,12
+9138a72e9298cc9a,160,21848,Otto-Warburg-Straße -> Maria-Eich-Straße,derived_terminal_stops,67,29
+c5bcba13995f80c0,181,11630,Wallnerstraße -> Studentenstadt,derived_terminal_stops,65,8
+d3b4bc06307e4061,160,21848,Otto-Warburg-Straße -> Maria-Eich-Straße,derived_terminal_stops,65,29
+5429e72c1ae7c654,160,21848,Pasing -> Waldfriedhof,derived_terminal_stops,60,14
+41b8a1460c5d0bcb,177,18142,Studentenstadt -> Petuelring,derived_terminal_stops,58,12
+b93d028188b9f7a5,143,18650,Hörweg -> Olympia-Einkaufszentrum,derived_terminal_stops,57,27
+ec9fe7246f499687,132,18971,Marienplatz -> Implerstraße,derived_terminal_stops,57,13
+33c468d9f3e25eed,181,11630,Studentenstadt -> Wallnerstraße,derived_terminal_stops,56,8
+d820580397c68ffb,132,18971,Implerstraße -> Marienplatz,derived_terminal_stops,56,14
+10d0afb92060df2e,191,13314,Ostbahnhof Friedenstraße -> Zamilapark,derived_terminal_stops,55,15
+5fa3e57a9881af65,191,13314,Ostbahnhof Friedenstraße -> Zamilapark,derived_terminal_stops,55,15
+2803dcb41af981f9,160,21848,Waldfriedhof -> Pasing,derived_terminal_stops,54,13
+e6067ba200e4cd4f,191,13314,Zamilapark -> Ostbahnhof Friedenstraße,derived_terminal_stops,52,17
+c80216d4f8442b17,184,12347,Bruno-Walter-Ring -> Arabellapark Nord,derived_terminal_stops,50,8
+50f3146fa5774723,160,21848,Maria-Eich-Straße -> Allach,derived_terminal_stops,50,23
+f3116d73dd035846,155,12381,Ostbahnhof (Post) -> Emdenstraße,derived_terminal_stops,49,12
+583c9ae9679b3372,155,12381,Emdenstraße -> Ostbahnhof (Post),derived_terminal_stops,48,10
+0f35a5c431122cda,187,14082,Rümelinstraße -> Berg am Laim,derived_terminal_stops,48,16
+35640b2b15896b18,68,20374,Hauptbahnhof Nord -> Silberhornstraße,derived_terminal_stops,48,12
+4d20d171f367b739,68,20374,Hauptbahnhof Nord -> Kolumbusplatz,derived_terminal_stops,48,12
+7cbb33d4cc86cc21,164,20536,Westfriedhof -> Pasinger Heuweg,derived_terminal_stops,48,16
+934c098eb6fce164,187,14082,Berg am Laim -> Rümelinstraße,derived_terminal_stops,46,18
+621eb5b8b90e1951,139,13891,Trudering -> Giesing,derived_terminal_stops,45,22
+21b3f43561f7acff,189,19622,St. Emmeram -> Daglfing Bahnhof West,derived_terminal_stops,45,20
+4015e0b098e55972,173,21811,Feldmoching -> Petuelring,derived_terminal_stops,45,14
+8b2827cd40f76197,58,13205,Kolumbusplatz -> Hauptbahnhof Nord,derived_terminal_stops,44,11
+e21684d6aa18964c,139,13891,Giesing -> Trudering,derived_terminal_stops,44,22
+34513bbd9d2c5603,58,13205,Silberhornstraße -> Hauptbahnhof Nord,derived_terminal_stops,43,13
+83bc449efb46bcc3,189,19622,Marienburger Straße -> St. Emmeram,derived_terminal_stops,41,19
+0d1ca558c52d0e9e,150,13515,Arabellapark Nord -> Bremer Straße,derived_terminal_stops,39,13
+33127c09b6a5c143,166,14800,Kemptener Straße -> Fürstenried West,derived_terminal_stops,39,6
+ba764952e80ca726,166,14800,Fürstenried West -> Forst-Kasten-Allee,derived_terminal_stops,39,4
+8741598723786543,68,20374,Hauptbahnhof Süd -> Hauptbahnhof Nord,derived_terminal_stops,38,41
+f1623f0863bcd012,68,20374,Hauptbahnhof Süd -> Hauptbahnhof Nord,derived_terminal_stops,38,39
+726e6c57cfc22182,164,20536,Pasinger Heuweg -> Westfriedhof,derived_terminal_stops,38,16
+cc4bb95417a6ec2c,150,13515,Arabellapark -> Bremer Straße,derived_terminal_stops,37,14
+456d3665fbaa7e0d,183,19005,Arabellapark -> Trabrennbahn,derived_terminal_stops,36,16
+543b1ad48e2f5da9,183,19005,Arabellapark -> Trabrennbahn,derived_terminal_stops,36,16
+a820b5e475359c1c,164,20536,Allach -> Allach,derived_terminal_stops,36,13
+ea5968e7848a4219,187,14082,Berg am Laim -> Arabellapark,derived_terminal_stops,35,26
+326193f4b3a0fd36,187,14082,Arabellapark -> Berg am Laim,derived_terminal_stops,33,24
+2aea53928a2a722c,143,18650,Olympia-Einkaufszentrum -> Freiham Bf. (Süd),derived_terminal_stops,33,32
+9190c5f1c9eeb50b,183,19005,Trabrennbahn -> Arabellapark,derived_terminal_stops,33,16
+db6fbc4723fda09f,132,18971,Isartor/Zweibrückenstraße -> Forstenrieder Park,derived_terminal_stops,32,31
+71569ecad022c54f,139,13891,Giesing -> Neuperlach Zentrum,derived_terminal_stops,29,13
+2cce8a5cc1f7fe0f,173,21811,Feldmoching -> Petuelring,derived_terminal_stops,28,14
+e7b7cdc2dde3c420,139,13891,Neuperlach Zentrum -> Giesing,derived_terminal_stops,27,13
+0c35f3066f0baff2,197,16264,Neuperlach Zentrum -> Neuperlach Zentrum,derived_terminal_stops,26,17
+aa50aef556b6105c,191,13314,Zamilapark -> Ostbahnhof Friedenstraße,derived_terminal_stops,25,17
+700afc478f3febd9,154,16818,Universität -> Nordbad,derived_terminal_stops,25,11
+b26be512adfec420,154,16818,Nordbad -> Infanteriestraße Süd,derived_terminal_stops,25,3
+4b3ae5b846bcabbf,132,18971,Forstenrieder Park -> Isartor,derived_terminal_stops,25,33
+8b5367727f885e4a,191,13314,Ostbahnhof Friedenstraße -> Zamilapark,derived_terminal_stops,24,14
+e7897497c0157ae5,191,13314,Ostbahnhof Friedenstraße -> Zamilapark,derived_terminal_stops,24,14
+8c61136268db0cef,63,15116,Heimeranplatz -> Stäblistraße,derived_terminal_stops,23,21
+33c686a59240a5e1,190,14255,Riem -> Messestadt Ost,derived_terminal_stops,22,11
+5e3c289bd6fbae85,139,13891,Trudering -> Klinikum Harlaching,derived_terminal_stops,20,34
+cccfded4f37c58d7,198,16226,Klara-Ziegler-Bogen -> Neuperlach Zentrum,derived_terminal_stops,18,8
+9930449b1855c9ce,139,13891,Klinikum Harlaching -> Trudering,derived_terminal_stops,17,34
+cfcc32d27216daa3,143,18650,Freiham Bf. (Süd) -> Olympia-Einkaufszentrum,derived_terminal_stops,17,33
+97935e7c51d54f1b,190,14255,Messestadt Ost -> Riem,derived_terminal_stops,16,11
+8600bc3835166299,143,18650,Freiham Bf. (Süd) -> Olympia-Einkaufszentrum,derived_terminal_stops,14,33
+8ed904eaaccafe1b,150,13515,Frankfurter Ring -> Arabellapark,derived_terminal_stops,13,13
+cb54dc3fa473f0f9,63,15116,Stäblistraße -> Heimeranplatz,derived_terminal_stops,13,21
+29aae9b2143c4652,160,21848,Dachstraße -> Allach,derived_terminal_stops,13,22
+6fc58100879f315d,150,13515,Arabellapark Nord -> Frankfurter Ring,derived_terminal_stops,12,12
+4120636e5b19d298,187,14082,Rümelinstraße -> Michaelibad,derived_terminal_stops,12,22
+dccd7a8b04ecfe08,187,14082,Michaelibad -> Rümelinstraße,derived_terminal_stops,12,24
+42af3b968963d2ae,183,19005,Daglfing Bahnhof West -> Arabellapark,derived_terminal_stops,12,12
+300031603b7af56d,N74,12827,Ostbahnhof -> Messestadt Ost,derived_terminal_stops,11,21
+0aefa572cb9814b3,139,13891,Klinikum Harlaching -> Neuperlach Zentrum,derived_terminal_stops,11,25
+e1b3e3a776ec7c1e,139,13891,Neuperlach Zentrum -> Klinikum Harlaching,derived_terminal_stops,11,25
+61c852c9c677f3ea,N72,16810,Herkomerplatz -> St. Emmeram,derived_terminal_stops,11,15
+6eb7ec58ac36a658,186,18235,Messestadt Ost -> Hofbräuallee,derived_terminal_stops,11,4
+c421bc37910b5f52,186,18235,Hofbräuallee -> Messestadt Ost,derived_terminal_stops,11,4
+0c31528360063fdb,62,12650,Rotkreuzplatz -> Ostbahnhof,derived_terminal_stops,10,35
+d39141b374b5cef9,50,17033,Olympia-Einkaufszentrum -> Johanneskirchen,derived_terminal_stops,10,25
+bf08ee734822de86,132,18971,Isartor/Zweibrückenstraße -> Implerstraße,derived_terminal_stops,10,10
+d76347b220710e6e,132,18971,Implerstraße -> Isartor,derived_terminal_stops,10,12
+7d58e810ca3d5877,183,19005,Arabellapark -> Daglfing Bahnhof West,derived_terminal_stops,10,12
+34021e56e47b8a5e,160,21848,Waldfriedhof -> Allach,derived_terminal_stops,10,29
+f333e06dbd2b03f6,160,21848,Pasing -> Maria-Eich-Straße,derived_terminal_stops,10,7
+f5df3fda5538e0c6,53,10061,Münchner Freiheit -> Harras,derived_terminal_stops,9,28
+2076e5cdc3187eff,62,12650,Sendlinger Tor -> Rotkreuzplatz,derived_terminal_stops,9,25
+d36d37bb0a73dfb5,N74,12827,Messestadt Ost -> Ostbahnhof,derived_terminal_stops,9,20
+68c992982323415c,58,13205,Ostbahnhof -> Hauptbahnhof Nord,derived_terminal_stops,9,19
+7def291cb4e61fde,58,13205,Ostbahnhof -> Hauptbahnhof Nord,derived_terminal_stops,9,18
+eed8170a084bee09,175,16792,Ludwigsfeld (Campingplatz) -> Olympia-Einkaufszentrum West,derived_terminal_stops,9,11
+bc8a5ed03e08225f,N72,16810,St. Emmeram -> Herkomerplatz,derived_terminal_stops,9,12
+d353b6cac5dde0c3,N43,1798,Ostbahnhof -> Ostbahnhof,derived_terminal_stops,9,59
+512df950c82af674,135,11824,Solln Bf. Wendeschleife -> Thalkirchen (Tierpark),derived_terminal_stops,8,8
+6e5ec3ffdb4c44e1,135,11824,Thalkirchen (Tierpark) -> Solln Bf. Wendeschleife,derived_terminal_stops,8,9
+3d0d185998fe8db1,143,18650,Hörweg -> Olympia-Einkaufszentrum,derived_terminal_stops,8,27
+139e964170d9c37c,53,10061,Donnersbergerbrücke -> Münchner Freiheit,derived_terminal_stops,7,16
+c5af98ab97cd1219,N78,13223,Blumenau -> Blutenburg,derived_terminal_stops,7,30
+d21a19d5f0071273,N78,13223,Blutenburg -> Blumenau,derived_terminal_stops,7,26
+51edab303508b03e,139,13891,Giesing -> Messestadt West,derived_terminal_stops,7,30
+3c3d9b119467fcba,63,15116,Aidenbachstraße -> Forstenrieder Allee,derived_terminal_stops,7,16
+ba1cbe42c5053991,N40,15555,Münchner Freiheit -> Kieferngarten,derived_terminal_stops,7,19
+d37096e29b9f54fc,N40,15555,Kieferngarten -> Münchner Freiheit,derived_terminal_stops,7,17
+52c08a0eb75a164c,N75,15878,Kiefernstraße -> Ostbahnhof,derived_terminal_stops,7,15
+574f200cd7b8364f,N75,15878,Ostbahnhof -> Kiefernstraße,derived_terminal_stops,7,16
+8844a087eb0aead1,160,21848,Maria-Eich-Straße -> Pasing,derived_terminal_stops,7,7
+5b8ddaf4d2ace550,N45,13920,Karlsplatz (Stachus) -> Waldperlach (Süd),derived_terminal_stops,6,45
+901527bae49fd989,N45,13920,Karlsplatz (Stachus) -> Waldperlach (Süd),derived_terminal_stops,6,47
+d3468c15cd6d96a7,N45,13920,Waldperlach (Süd) -> Karlsplatz (Stachus),derived_terminal_stops,6,46
+d4d5b66308a93733,N45,13920,Waldperlach (Süd) -> Karlsplatz (Stachus),derived_terminal_stops,6,47
+257ab3d05333384d,154,16818,Arabellapark Nord -> Westerlandanger,derived_terminal_stops,6,13
+3bf0d02469f1d0da,50,17033,Johanneskirchen -> Studentenstadt,derived_terminal_stops,6,7
+7a71b60a56a11d66,59,18037,Giesing -> Einsteinstraße,derived_terminal_stops,6,11
+f52e7553b004a6bf,143,18650,Freiham Bf. (Süd) -> Olympia-Einkaufszentrum,derived_terminal_stops,6,33
+53cf4fb131c39e17,53,10061,Harras -> Münchner Freiheit,derived_terminal_stops,5,28
+6f52b01bfee2891a,53,10061,Rotkreuzplatz -> Aidenbachstraße,derived_terminal_stops,5,24
+02e9a4e9cee7cf77,62,12650,Rotkreuzplatz -> Poccistraße,derived_terminal_stops,5,18
+86319760d4ae39d2,62,12650,Heimeranplatz -> Rotkreuzplatz,derived_terminal_stops,5,11
+a6ce7fb46e119c57,62,12650,Rotkreuzplatz -> Heimeranplatz,derived_terminal_stops,5,12
+ee0374f1f91b72e7,62,12650,Ostbahnhof -> Heimeranplatz,derived_terminal_stops,5,24
+31884b650c5c26fc,58,13205,Hauptbahnhof Nord -> Ostbahnhof,derived_terminal_stops,5,22
+096897931e800b75,139,13891,Messestadt West -> Giesing,derived_terminal_stops,5,30
+ba5fc973e4af8cf4,63,15116,Forstenrieder Allee -> Aidenbachstraße,derived_terminal_stops,5,16
+b7929c8d6df4c64b,56,17799,Blumenau -> Fürstenried West,derived_terminal_stops,5,13
+81418333f243d906,143,18650,Freiham Bf. (Süd) -> Blutenburg,derived_terminal_stops,5,19
+10c41159b9a0c9e7,160,21848,Allach -> Dachstraße,derived_terminal_stops,5,22
+349f2e0acaff2a9b,160,21848,Pasing Bf. Nord -> Allach,derived_terminal_stops,5,14
+51147202f6c81891,160,21848,Allach -> Dachstraße,derived_terminal_stops,5,22
+10611f9ffb4d0a25,181,11630,Fröttmaning Auensiedlung -> Studentenstadt,derived_terminal_stops,4,13
+9d65ea0478f399c2,62,12650,Rotkreuzplatz -> Sendlinger Tor,derived_terminal_stops,4,26
+cb2a625b1f163954,62,12650,Poccistraße -> Ostbahnhof,derived_terminal_stops,4,20
+5173c852cda36483,63,15116,Aidenbachstraße -> Rotkreuzplatz,derived_terminal_stops,4,18
+e4551d1189a7c587,63,15116,Aidenbachstraße -> Rotkreuzplatz,derived_terminal_stops,4,19
+4cb24b999514c355,N40,15555,Kieferngarten -> Klinikum Großhadern,derived_terminal_stops,4,48
+078c743e5b4c8204,50,17033,Frankfurter Ring -> Dessauerstraße,derived_terminal_stops,4,11
+f9dd5d8e0040f16f,50,17033,Dessauerstraße -> Frankfurter Ring,derived_terminal_stops,4,11
+c67255189af7a257,56,17799,Fürstenried West -> Pasing,derived_terminal_stops,4,21
+af12383063e086d5,59,18037,Münchner Freiheit -> Giesing,derived_terminal_stops,4,20
+19754d0cc10bb074,143,18650,Amalienburgstraße -> Freiham Bf. (Süd),derived_terminal_stops,4,24
+1b7cb12342883571,143,18650,"Freiham, Möbel Höffner -> Olympia-Einkaufszentrum",derived_terminal_stops,4,34
+a4589d99c3c22c6b,143,18650,Freiham Bf. (Süd) -> Amalienburgstraße,derived_terminal_stops,4,25
+7870ec53a64c3cfe,132,18971,Harras -> Forstenrieder Park,derived_terminal_stops,4,17
+3c68cf304eaeae56,53,10061,Aidenbachstraße -> Rotkreuzplatz,derived_terminal_stops,3,24
+6ff1a125bfa40be1,181,11630,Studentenstadt -> Fröttmaning Auensiedlung,derived_terminal_stops,3,9
+e6241708cdb60fc2,62,12650,Sendlinger Tor -> Ostbahnhof,derived_terminal_stops,3,12
+d3b85141d6f73d2d,139,13891,Klinikum Harlaching -> Giesing,derived_terminal_stops,3,13
+17417fdbf59b2547,N45,13920,Münchner Freiheit -> Waldperlach (Süd),derived_terminal_stops,3,56
+7cd364bc81b6912d,N45,13920,Münchner Freiheit -> Waldperlach (Süd),derived_terminal_stops,3,54
+29dc22f81e13aac8,187,14082,Berg am Laim -> Herkomerplatz,derived_terminal_stops,3,10
+228c1ac15574a796,190,14255,Messestadt Ost -> Riem,derived_terminal_stops,3,11
+4bc812c622bee8d7,190,14255,Ostbahnhof Friedenstraße -> Messestadt West,derived_terminal_stops,3,25
+83f7d2212d7fa4c5,190,14255,Ostbahnhof Friedenstraße -> Messestadt West,derived_terminal_stops,3,25
+5239d66fde1db2e8,166,14800,Fürstenried West -> Kemptener Straße,derived_terminal_stops,3,5
+c03807169d9d8536,166,14800,Forst-Kasten-Allee -> Fürstenried West,derived_terminal_stops,3,4
+10252317d09e18fb,63,15116,Stäblistraße -> Heimeranplatz,derived_terminal_stops,3,20
+5938af447df3a18b,N40,15555,Klinikum Großhadern -> Kieferngarten,derived_terminal_stops,3,51
+6c7447ce01b2a7f1,140,15866,Kieferngarten -> Grusonstraße,derived_terminal_stops,3,7
+d861f4e7a11c0f29,140,15866,Grusonstraße -> Kieferngarten,derived_terminal_stops,3,7
+5039b7c7b3bf4cc8,197,16264,Neuperlach Zentrum -> Quiddestraße,derived_terminal_stops,3,11
+b08de0c724240fcb,50,17033,Dessauerstraße -> Studentenstadt,derived_terminal_stops,3,20
+0ecd5cb5c536005f,56,17799,Fürstenried West -> Blumenau,derived_terminal_stops,3,13
+6fd14248b723f2dd,56,17799,Schloss Blutenburg -> Krokusstraße,derived_terminal_stops,3,17
+ef99dd0dc5a75a60,56,17799,Blumenau -> Schloss Blutenburg,derived_terminal_stops,3,17
+2462e20409b6db57,59,18037,Giesing -> Münchner Freiheit,derived_terminal_stops,3,20
+74208d5d829864be,59,18037,Ackermannbogen -> Münchner Freiheit,derived_terminal_stops,3,9
+d06c1da715ae5fc3,N81,19247,Pasing -> Pasing,derived_terminal_stops,3,24
+95cefcf8f4c2b499,189,19622,Richard-Strauss-Straße -> St. Emmeram,derived_terminal_stops,3,12
+05c313f1adf5ec18,160,21848,Dachstraße -> Otto-Warburg-Straße,derived_terminal_stops,3,28
+4f2b5cf5c3b484e5,160,21848,Allach -> Pasing Bf. Nord,derived_terminal_stops,3,14
+ab128c5bcf5dfaa9,160,21848,Allach -> Waldfriedhof,derived_terminal_stops,3,30
+a49b8e9ad01e9e5c,62,12650,Ostbahnhof -> Sendlinger Tor,derived_terminal_stops,2,10
+0febbc99dbfb1eba,N74,12827,Vogelweideplatz -> Ostbahnhof,derived_terminal_stops,2,5
+39f2f7030736618d,150,13515,Arabellapark -> Frankfurter Ring,derived_terminal_stops,2,13
+0240e5ca54a79267,139,13891,Giesing -> Klinikum Harlaching,derived_terminal_stops,2,13
+4c3299ca5334b028,N45,13920,Waldperlach (Süd) -> Münchner Freiheit,derived_terminal_stops,2,56
+cd4715b0f3f97401,N45,13920,Waldperlach (Süd) -> Münchner Freiheit,derived_terminal_stops,2,55
+7f41f1f4a6bbbc70,190,14255,Messestadt Ost -> Ostbahnhof Friedenstraße,derived_terminal_stops,2,29
+06d5b7d136782ce2,N80,16064,Pasing -> Pasing,derived_terminal_stops,2,24
+57c9fba4746947da,N80,16064,Pirolstraße -> Pasing,derived_terminal_stops,2,17
+b556c5a07cd91825,175,16792,Ludwigsfeld (Campingplatz) -> Olympia-Einkaufszentrum,derived_terminal_stops,2,10
+9db3cf8abb97941b,N43,1798,Ostbahnhof -> Rotkreuzplatz,derived_terminal_stops,2,35
+8a96b5d4cea31565,59,18037,Ackermannbogen -> Einsteinstraße,derived_terminal_stops,2,18
+db7d0576cb4461ad,143,18650,"Freiham, Möbel Höffner -> Olympia-Einkaufszentrum",derived_terminal_stops,2,34
+fce604e09df8114a,143,18650,Langwied -> Freiham Bf. (Süd),derived_terminal_stops,2,12
+a3b8ef0fa9bee0ab,68,20374,Ostbahnhof -> Hauptbahnhof Nord,derived_terminal_stops,2,23
+4d3d7b6579189f7b,164,20536,Zaunerstraße -> Augustenfelder Straße,derived_terminal_stops,2,22
+bf6e5e618cd9633e,164,20536,Pasinger Heuweg -> Westfriedhof,derived_terminal_stops,2,17
+00a20f49cda6ec84,160,21848,Allach -> Pasing Bf. Nord,derived_terminal_stops,2,14
+9e9a42fa36170be0,160,21848,Blutenburg -> Maria-Eich-Straße,derived_terminal_stops,2,16
+d7c114a910aa3d47,160,21848,Otto-Warburg-Straße -> Dachstraße,derived_terminal_stops,2,28
+8e13b128242b47a2,53,10061,Schwanthalerhöhe -> Aidenbachstraße,derived_terminal_stops,1,15
+f8374dae28b32f2e,62,12650,Rotkreuzplatz -> Sendlinger Tor,derived_terminal_stops,1,24
+00541fb6c9d8e4e8,N45,13920,Münchner Freiheit -> Ostbahnhof,derived_terminal_stops,1,26
+0265e55e1be0e941,N45,13920,Waldperlach (Süd) -> Silberhorn-/Ichostraße,derived_terminal_stops,1,38
+4aef3ec8a12646b3,N45,13920,Karlsplatz (Stachus) -> Ostbahnhof,derived_terminal_stops,1,19
+70ca477f27d6aca7,N45,13920,Ostbahnhof -> Karlsplatz (Stachus),derived_terminal_stops,1,17
+761ce75655fcec66,N45,13920,Waldperlach (Süd) -> Kolumbusplatz (Nord),derived_terminal_stops,1,38
+8fc5e08179dd4483,N45,13920,Ostbahnhof -> Karlsplatz (Stachus),derived_terminal_stops,1,18
+92d213e162fbb2bc,N45,13920,Karlsplatz (Stachus) -> Ostbahnhof,derived_terminal_stops,1,17
+987e1f5b86069862,N45,13920,Münchner Freiheit -> Ostbahnhof,derived_terminal_stops,1,28
+d346f8641c91479b,N45,13920,Ostbahnhof -> Münchner Freiheit,derived_terminal_stops,1,26
+fb87183a76f48887,N45,13920,Ostbahnhof -> Münchner Freiheit,derived_terminal_stops,1,27
+8c6f565e8f739ef1,187,14082,Herkomerplatz -> Berg am Laim,derived_terminal_stops,1,9
+8e8e5948c626bf0a,187,14082,Herkomerplatz -> Michaelibad,derived_terminal_stops,1,15
+b80555ce3f96c133,190,14255,Messestadt West -> Ostbahnhof Friedenstraße,derived_terminal_stops,1,26
+76c4d8201eb09464,166,14800,Forst-Kasten-Allee -> Fürstenried West,derived_terminal_stops,1,4
+4c61d0810f73ae26,63,15116,Forstenrieder Allee -> Heimeranplatz,derived_terminal_stops,1,25
+25f0882d728941e6,N40,15555,Harras -> Kieferngarten,derived_terminal_stops,1,35
+19517619e0db53aa,197,16264,Klinikum Neuperlach -> Quiddestraße,derived_terminal_stops,1,8
+2598d4d9e8bcb695,154,16818,Johanneskirchner Straße -> Tivolistraße,derived_terminal_stops,1,14
+d71e6fb2ec518be1,154,16818,Johanneskirchner Straße -> Arabellapark,derived_terminal_stops,1,9
+9cff0af86646da98,50,17033,Studentenstadt -> Dessauerstraße,derived_terminal_stops,1,21
+7ee5e18cb83cc204,56,17799,Blumenau -> Pasing,derived_terminal_stops,1,9
+d2275ecf0d99b079,56,17799,Blumenau -> Pasing,derived_terminal_stops,1,9
+5dbde16dcc874941,N43,1798,Münchner Freiheit -> Ostbahnhof,derived_terminal_stops,1,14
+2ad331eae2311231,143,18650,Olympia-Einkaufszentrum -> Hans-Steinkohl-Straße,derived_terminal_stops,1,33
+a6daa83b16bb5e80,143,18650,Hans-Steinkohl-Straße -> Olympia-Einkaufszentrum,derived_terminal_stops,1,33
+d7c4128696a63943,189,19622,Herkomerplatz -> St. Emmeram,derived_terminal_stops,1,11
+c345003d4d598245,164,20536,Westfriedhof -> Allach,derived_terminal_stops,1,22
+93b7df7097ec91a4,173,21811,Olympiazentrum -> Feldmoching,derived_terminal_stops,1,12
+15c9e36f25d49fea,160,21848,Blutenburg -> Peslmüllerstraße,derived_terminal_stops,1,15
+a1b7699f20c4c90e,160,21848,Otto-Warburg-Straße -> Dachstraße,derived_terminal_stops,1,28
+a437d82496a6ba45,160,21848,Waldfriedhof -> Höcherstraße,derived_terminal_stops,1,32
+b9721906df6c557e,160,21848,Pasing -> Peslmüllerstraße,derived_terminal_stops,1,6
+f26dae09aa45b02a,160,21848,Peslmüllerstraße -> Pasing,derived_terminal_stops,1,4
+fcbc0653af7c9bec,160,21848,Höcherstraße -> Maria-Eich-Straße,derived_terminal_stops,1,25

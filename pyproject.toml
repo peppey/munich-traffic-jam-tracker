@@ -1,0 +1,25 @@
+[project]
+name = "munich-traffic-jam-tracker"
+version = "0.1.0"
+description = "Derive Munich bus traffic corridors from GTFS stop sequences."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.8",
+    "pandas>=2.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+munich-traffic-jam-tracker = "munich_traffic_jam_tracker.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
