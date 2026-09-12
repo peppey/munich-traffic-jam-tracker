@@ -39,9 +39,16 @@ Results are written to `data/derived/`:
 - `bus_patterns.csv`: one row per route, direction, and stop sequence
 - `bus_pattern_stops.csv`: ordered stops for each pattern
 - `bus_corridors.geojson`: line candidates joining consecutive stops
+- `bus_pattern_traffic.csv`: HERE-Verkehrsschätzung je GTFS-Muster
+- `bus_line_traffic.csv`: HERE-Verkehrsschätzung je Buslinie
 - `plots/top_bus_patterns.png`: most frequent patterns by line
 - `plots/bus_corridor_map.png`: a map of the most common corridor candidates
+- `plots/bus_line_traffic_delay.png`: Linien-Ranking nach geschätzter Verzögerung
+- `plots/bus_traffic_delay_map.png`: Korridore eingefärbt nach geschätzter Verzögerung
 
-The straight line between consecutive stops is only a provisional corridor.
-The next stage should map-match it to a routable road network (for example
-OSRM or Valhalla), then use that geometry to request HERE Traffic Flow data.
+Die HERE-Werte beschreiben den aktuellen Straßenverkehr und sind deshalb eine
+verkehrsbedingte Verzögerungsschätzung für Buskorridore, keine tatsächliche
+Verspätung einzelner Busse. Die Zuordnung basiert derzeit auf geraden Linien
+zwischen Haltestellen. Für bessere Ergebnisse sollte der nächste Schritt die
+Korridore auf ein routingfähiges Straßennetz (z. B. OSRM oder Valhalla)
+map-matchen.

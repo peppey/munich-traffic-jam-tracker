@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 
 from .patterns import (
@@ -14,6 +15,8 @@ from .patterns import (
     write_corridor_geojson,
 )
 from .plotting import plot_corridor_map, plot_top_patterns
+from .plotting import plot_traffic_delay_by_line, plot_traffic_delay_map
+from .traffic import fetch_flow, match_flow_to_patterns, parse_flow_results, summarize_traffic
 
 
 def derive_command(arguments: argparse.Namespace) -> None:
@@ -35,6 +38,21 @@ def derive_command(arguments: argparse.Namespace) -> None:
     write_corridor_geojson(patterns, pattern_stops, output_dir / "bus_corridors.geojson")
     plot_top_patterns(patterns, plots_dir / "top_bus_patterns.png")
     plot_corridor_map(patterns, pattern_stops, plots_dir / "bus_corridor_map.png")
+    api_key = arguments.here_api_key or os.environ.get("HERE_API_KEY")
+    if api_key:
+        west = float(stops["stop_lon"].min())
+        east = float(stops["stop_lon"].max())
+        south = float(stops["stop_lat"].min())
+        north = float(stops["stop_lat"].max())
+        results = fetch_flow(api_key, west, south, east, north)
+        flow = parse_flow_results(results)
+        matches = match_flow_to_patterns(flow, pattern_stops)
+        traffic_by_pattern, traffic_by_line = summarize_traffic(matches, patterns)
+        traffic_by_pattern.to_csv(output_dir / "bus_pattern_traffic.csv", index=False)
+        traffic_by_line.to_csv(output_dir / "bus_line_traffic.csv", index=False)
+        plot_traffic_delay_by_line(traffic_by_line, plots_dir / "bus_line_traffic_delay.png")
+        plot_traffic_delay_map(traffic_by_pattern, pattern_stops, plots_dir / "bus_traffic_delay_map.png")
+        print(f"Matched {len(matches)} HERE flow segments and wrote traffic estimates")
     print(f"Wrote {len(patterns)} patterns and {len(pattern_stops)} pattern stops to {output_dir}")
 
 
@@ -47,6 +65,7 @@ def main() -> None:
     derive.add_argument("--munich-lines", required=True)
     derive.add_argument("--munich-boundary", required=True, help="Recorded input boundary for reproducibility.")
     derive.add_argument("--output-dir", default="data/derived")
+    derive.add_argument("--here-api-key", help="HERE API key; defaults to HERE_API_KEY")
     derive.set_defaults(handler=derive_command)
     arguments = parser.parse_args()
     arguments.handler(arguments)
